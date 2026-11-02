@@ -1,0 +1,17 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+numpy>=1.26
+pypdf>=4.0
+python-dotenv>=1.0
+reportlab>=4.0                  # PDF report
+sentence-transformers>=2.7      # Sentence-BERT (multilingual model, ~470 MB download on first run)
+langdetect>=1.0.9                # identify languages and mixed-language submissions
+faiss-cpu>=1.8                  # approximate nearest-neighbour index (if install fails, app uses numpy automatically)
+anthropic>=0.40                 # optional: AI novelty advisor, Hindi keyword translation, chatbot
+# --- optional: images and scanned PDFs (also install the Tesseract program) ---
+pytesseract>=0.3.10
+Pillow>=10.0
+pypdfium2>=4.30
+scikit-learn>=1.5,<2.0
+pillow-heif>=0.18
